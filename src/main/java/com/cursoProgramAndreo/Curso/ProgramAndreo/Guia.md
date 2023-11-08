@@ -2,6 +2,23 @@
 
 Dicas para não se perder quando estiver programando.
 
+**Conteudos:**
+<!-- TOC -->
+* [Guia do mestre supremo para pegar detalhezinhos em java.](#guia-do-mestre-supremo-para-pegar-detalhezinhos-em-java)
+  * [Sempre tem o ; no final de cada comando](#sempre-tem-o--no-final-de-cada-comando)
+  * [Tudo que abre, fecha](#tudo-que-abre-fecha)
+  * [Tipos de dados](#tipos-de-dados)
+  * [Nomeando variaveis](#nomeando-variaveis)
+  * [Operadores aritmeticos](#operadores-aritmeticos)
+  * [Operadores de comparação](#operadores-de-comparação)
+  * [Operadores lógicos](#operadores-lógicos)
+  * [SCANNER - Entrada de dados](#scanner---entrada-de-dados)
+  * [IF ELSE](#if-else)
+  * [CASE](#case)
+  * [Comparando coisas](#comparando-coisas)
+  * [PRINT - Saida de dados](#print---saida-de-dados)
+<!-- TOC -->
+
 ## Sempre tem o ; no final de cada comando
 
 Tudo bem quebrar linha na metade do comando, ou colocar varios espaços, mas não esqueça que ao fim do comando deve haver um ponto e virgula.
@@ -134,7 +151,7 @@ Comparam valores boleanos
 | \|\|    | OU - or   |
 | !       | não - not |
 
-## Entrada de dados
+## SCANNER - Entrada de dados
 
 Use o Scanner para isso. ``Scanner scanner = new Scanner(System.in);``
 
@@ -245,7 +262,7 @@ class ComparandoCoisas {
 ```
 Consulte a tabela verdade para mais informações sobre isso, aqui apenas saiba que é possivel.
 
-## Saida de dados
+## PRINT - Saida de dados
 
 os comandos que imprimem na tela são:
 
@@ -256,6 +273,8 @@ Resultado: _Aqui você apenas concatena as coisas usando +_
 ``System.out.printf("Aqui você apenas concatena %s ", "As coisas, usando placeholders");``
 
 Resultado: _Aqui você apenas concatena as coisas usando placeholders_
+
+PS: o printf sempre precisa de mais de um parametro, o primeiro sempre contendo os placeholders.
 
 Tipos de placeholders para usar com o printf
 
@@ -269,3 +288,6 @@ Tipos de placeholders para usar com o printf
 
 Observem que o numero que eu coloco em %.2f, quando estou criando um placeholder para float ou double, 
 é o de casas decimais depois do zero que serão exibidas.
+
+Lembrem-se que o println adiciona o caractere \n, que quebra a linha.
+Se não quiserem quebrar a linha utilizem ``System.out.print("Seu texto");`` ou ``System.out.printf("Seu %s", "texto");`` 
