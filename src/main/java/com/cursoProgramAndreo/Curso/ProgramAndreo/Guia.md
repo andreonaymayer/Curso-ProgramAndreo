@@ -82,6 +82,25 @@ class Tipos {
 }
 ```
 
+## Nomeando variaveis
+
+4 regras simples:
+- nunca começar variaveis com numeros, apenas letras minusculas ou _
+- não pode espaço, caracteres especiais e acentos
+- usar padrao camelCase, que vai colocar letra maiuscula para cada nova palavra se houver
+- colocar nomes objetivos e descritivos
+
+**Exemplos:**
+
+| Errado                       | Certo                        |
+|------------------------------|------------------------------|
+| ``int 1nota = 1;``           | ``int _1nota = 1;``          |
+| ``int Nota = 1;``            | ``int nota = 1;``            |
+| ``int nome grande = 1;``     | ``int nomeGrande = 1;``      |
+| ``boolean éCroança = true;`` | ``boolean eCrianca = true;`` |
+
+
+
 ## Operadores aritmeticos
 
 | Simbolo | Operação               |
@@ -196,3 +215,57 @@ class IfElse {
 - Lembre-se que é possivel fazer um switch sem o default.
 - Lembre-se sempre de colocar o break, após cada case, se não ele executa mais de um até encontrar o break.
 
+## Comparando coisas
+
+**Comparadores**
+```java
+class ComparandoCoisas {
+    boolean umMaiorQueZero = 1>0;
+        // o java vai fazer a operação e atribuir o valor na variavel, nesse caso true
+    boolean oCaractereAEhIgualAoCaractereX = 'a' == 'x';
+        // o java vai fazer a operação e atribuir o valor na variavel, nesse caso false
+    boolean textosIguais = "Andreo".equals("Andreo");
+    boolean textosIguais = "Andreo" == "Andreo";
+        // as duas formas funcionam e resultam o mesmo valor, true.
+    boolean ehVerdadeiro = true == true;
+        // o java vai fazer a operação e atribuir o valor na variavel, nesse caso true
+}
+```
+
+**Lógico**
+```java
+class ComparandoCoisas {
+    boolean or = true || false;
+        // true, porque pelo menos uma é verdadeira para o or
+    boolean and = true && true;
+        // true, porque as duas são verdadeiras
+    boolean not = !true;
+        // false, porque inverte o valor
+}
+```
+Consulte a tabela verdade para mais informações sobre isso, aqui apenas saiba que é possivel.
+
+## Saida de dados
+
+os comandos que imprimem na tela são:
+
+``System.out.println("Aqui você apenas concatena " + "as coisas usando +");``
+
+Resultado: _Aqui você apenas concatena as coisas usando +_
+
+``System.out.printf("Aqui você apenas concatena %s ", "As coisas, usando placeholders");``
+
+Resultado: _Aqui você apenas concatena as coisas usando placeholders_
+
+Tipos de placeholders para usar com o printf
+
+| Tipo                | Exemplo                                                |
+|---------------------|--------------------------------------------------------|
+| %d - inteiros       | ``System.out.printf("Minha idade é %d anos", 25);``    |
+| %s - textos         | ``System.out.printf("Meu nome é %s", "Andreo");``      |
+| %b - boolean        | ``System.out.printf("Ligado: %b", true);``             |
+| %c - boolean        | ``System.out.printf("o %c é uma vogal", 'a');``        |
+| %.2f - float/double | ``System.out.printf("Numero quebrado: %.2f", 3.123);`` |
+
+Observem que o numero que eu coloco em %.2f, quando estou criando um placeholder para float ou double, 
+é o de casas decimais depois do zero que serão exibidas.
