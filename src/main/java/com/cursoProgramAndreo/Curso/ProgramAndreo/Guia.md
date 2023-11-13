@@ -5,6 +5,8 @@ Dicas para não se perder quando estiver programando.
 **Conteudos:**
 <!-- TOC -->
 * [Guia do mestre supremo para pegar detalhezinhos em java.](#guia-do-mestre-supremo-para-pegar-detalhezinhos-em-java)
+  * [Comando de incremento ++](#comando-de-incremento-)
+  * [Comando de decremento --](#comando-de-decremento---)
   * [Sempre tem o ; no final de cada comando](#sempre-tem-o--no-final-de-cada-comando)
   * [Tudo que abre, fecha](#tudo-que-abre-fecha)
   * [Tipos de dados](#tipos-de-dados)
@@ -18,6 +20,9 @@ Dicas para não se perder quando estiver programando.
   * [Estruturas de Algoritmos](#estruturas-de-algoritmos)
     * [IF ELSE](#if-else)
     * [CASE](#case)
+    * [DO - WHILE](#do---while)
+    * [WHILE](#while)
+    * [FOR](#for)
   * [Comparando coisas](#comparando-coisas)
 <!-- TOC -->
 
